@@ -33,4 +33,13 @@ class WelcomeController extends Controller {
 		return view('welcome');
 	}
 
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function exemplo()
+    {
+        $nome = "Ricardo";
+        return view('exemplo')->with('nome', $nome);
+    }
+
 }
